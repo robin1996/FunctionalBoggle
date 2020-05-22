@@ -13,7 +13,7 @@ struct ContentView: View {
     @ObservedObject var engine = BoggleEngine()
     @State private var word = ""
     @State private var state = false
-    
+
     var body: some View {
         VStack {
             Spacer()
@@ -33,9 +33,9 @@ struct ContentView: View {
             Spacer()
         }
     }
-    
+
     func testWord() {
-        state = engine.test(word: Array(word.lowercased()))
+        state = engine.test(word: word.lowercased())
     }
 
 }
