@@ -13,6 +13,8 @@
 		F53F6A9F2476B13600C4A3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53F6A9E2476B13600C4A3B2 /* Assets.xcassets */; };
 		F53F6AA22476B13600C4A3B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53F6AA12476B13600C4A3B2 /* Preview Assets.xcassets */; };
 		F53F6AA52476B13600C4A3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53F6AA32476B13600C4A3B2 /* LaunchScreen.storyboard */; };
+		F53F6AAD2476B14B00C4A3B2 /* Boggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F6AAC2476B14B00C4A3B2 /* Boggle.swift */; };
+		F53F6AB02476CF7100C4A3B2 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F6AAF2476CF7100C4A3B2 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F53F6AA12476B13600C4A3B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F53F6AA42476B13600C4A3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F53F6AA62476B13600C4A3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F6AAC2476B14B00C4A3B2 /* Boggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boggle.swift; sourceTree = "<group>"; };
+		F53F6AAF2476CF7100C4A3B2 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				F53F6AA32476B13600C4A3B2 /* LaunchScreen.storyboard */,
 				F53F6AA62476B13600C4A3B2 /* Info.plist */,
 				F53F6AA02476B13600C4A3B2 /* Preview Content */,
+				F53F6AAC2476B14B00C4A3B2 /* Boggle.swift */,
+				F53F6AAF2476CF7100C4A3B2 /* Helpers.swift */,
 			);
 			path = FunctionalBoggle;
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 				F53F6A992476B13400C4A3B2 /* AppDelegate.swift in Sources */,
 				F53F6A9B2476B13400C4A3B2 /* SceneDelegate.swift in Sources */,
 				F53F6A9D2476B13400C4A3B2 /* ContentView.swift in Sources */,
+				F53F6AB02476CF7100C4A3B2 /* Helpers.swift in Sources */,
+				F53F6AAD2476B14B00C4A3B2 /* Boggle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

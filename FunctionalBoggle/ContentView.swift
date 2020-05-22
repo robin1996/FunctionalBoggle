@@ -9,13 +9,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    @ObservedObject var engine = BoggleEngine()
+    @State private var word = ""
+    @State private var state = false
+    
+    var body: some View {
+        VStack {
+            Spacer()
+            Text(engine.grid.render())
+                .font(.system(size: 30, design: .monospaced))
+                .foregroundColor(state ? .green : .black)
+            TextField("Enter your word here", text: $word)
+                .padding()
+            HStack {
+                Spacer()
+                Button("Shake!", action: engine.shakeGrid)
+                    .foregroundColor(.red)
+                Spacer()
+                Button("Go!", action: testWord)
+                Spacer()
+            }
+            Spacer()
+        }
     }
+    
+    func testWord() {
+        state = engine.test(word: Array(word.lowercased()))
+    }
+
 }
